@@ -1,0 +1,9 @@
+# Main article for setup
+
+http://www.philrandal.co.uk/blog/archives/2019/04/entry_213.html
+
+# others
+
+http://www.satsignal.eu/ntp/Raspberry-Pi-NTP.html
+
+

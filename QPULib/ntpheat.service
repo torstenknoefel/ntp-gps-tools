@@ -1,0 +1,14 @@
+[Unit]
+Description=NTP Heating Service
+
+Before=ntp.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ntpheat
+StandardOutput=null
+Restart=always
+Nice=19
+
+[Install]
+WantedBy=multi-user.target

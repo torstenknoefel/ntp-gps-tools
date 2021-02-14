@@ -1,0 +1,9 @@
+[Unit]
+Description=u-blox initialisation
+Before=gpsd.service
+Before=ntp.service
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 '/usr/local/bin/ublox-init.py'
+[Install]
+WantedBy=multi-user.target

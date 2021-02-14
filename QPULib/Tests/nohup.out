@@ -1,0 +1,3 @@
+kill: (26643): No such process
+can't open /dev/mem
+This program should be run as root. Try prefixing command with: sudo

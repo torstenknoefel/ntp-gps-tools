@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Generate an estimate of your GPS's offset from a peerstats file
+#
+awk '
+/127\.127\.20\.0/ { sum -= $5 ; cnt++; }
+END { printf("%.6f\n", sum / cnt); }
+' <./ntplog
+#' </var/log/ntpstats/peerstats
+
+
